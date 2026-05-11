@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — ВояжСервис</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='85'>✈</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- НАВБАР -->
+  <nav class="navbar solid" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">✈</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">ВояжСервис</span>
+          <span class="nav-logo-sub">Travel Agency</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"    class="nav-link">Главная</a></li>
+        <li><a href="services.html" class="nav-link">Услуги</a></li>
+        <li><a href="system.html"   class="nav-link">О системе</a></li>
+        <li><a href="contacts.html" class="nav-link nav-cta active">Контакты</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="container">
+      <div class="page-hero-content">
+        <div class="breadcrumb">
+          <a href="index.html">Главная</a>
+          <span>›</span>
+          <span>Контакты</span>
+        </div>
+        <h1>Свяжитесь с нами</h1>
+        <p>Наши менеджеры ответят на все вопросы и помогут подобрать идеальный тур</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       КОНТАКТЫ И ФОРМА
+       ====================================================== -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Левая колонка: контактные данные -->
+        <div class="contact-info-card fade-up">
+          <h3>Контактная информация</h3>
+          <p>Обращайтесь любым удобным способом — ответим быстро</p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div class="contact-item-text">
+                <h5>Адрес офиса</h5>
+                <p>г. Баку, ул. Низами, д. 46, офис 215<br>Станция метро: Низами</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📞</div>
+              <div class="contact-item-text">
+                <h5>Телефон</h5>
+                <p>+994 (12) 555-12-34 (многоканальный)<br>+994 (55) 800-12-34 (мобильный)</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">✉</div>
+              <div class="contact-item-text">
+                <h5>Email</h5>
+                <p>info@voyageservice.az — общие вопросы<br>booking@voyageservice.az — бронирование</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">🕐</div>
+              <div class="contact-item-text">
+                <h5>Режим работы</h5>
+                <p>Пн–Пт: 9:00 – 20:00<br>Сб–Вс: 10:00 – 18:00</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Социальные сети -->
+          <div>
+            <p style="font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-light);margin-bottom:14px;">Мы в соцсетях</p>
+            <div class="social-links">
+              <a href="#" class="social-link" title="ВКонтакте">VK</a>
+              <a href="#" class="social-link" title="Telegram">TG</a>
+              <a href="#" class="social-link" title="Instagram">IG</a>
+              <a href="#" class="social-link" title="WhatsApp">WA</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Правая колонка: форма -->
+        <div class="contact-form-wrap fade-up delay-1">
+          <h3>Написать нам</h3>
+          <p>Заполните форму, и мы свяжемся с вами в течение 30 минут в рабочее время</p>
+
+          <!-- Форма обратной связи -->
+          <form id="contactForm" novalidate>
+
+            <!-- Имя и фамилия -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Имя <span class="req">*</span></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-control"
+                  placeholder="Иван Иванов"
+                  required
+                  autocomplete="name"
+                >
+                <span class="form-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email <span class="req">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="example@mail.ru"
+                  required
+                  autocomplete="email"
+                >
+                <span class="form-error"></span>
+              </div>
+            </div>
+
+            <!-- Телефон -->
+            <div class="form-group">
+              <label for="phone">Телефон <span class="req">*</span></label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="form-control"
+                placeholder="+7 (___) ___-__-__"
+                required
+                autocomplete="tel"
+              >
+              <span class="form-error"></span>
+            </div>
+
+            <!-- Интересующий тур -->
+            <div class="form-group">
+              <label for="tour">Интересующее направление</label>
+              <select id="tour" name="tour" class="form-control">
+                <option value="">— Выберите направление —</option>
+                <option value="beach">🏖 Пляжный отдых (Мальдивы, Турция, Таиланд...)</option>
+                <option value="europe">🏛 Европа (Франция, Италия, Испания...)</option>
+                <option value="dubai">🌆 ОАЭ и Ближний Восток</option>
+                <option value="active">🏔 Активный туризм (Алтай, Норвегия...)</option>
+                <option value="health">🧘 Оздоровительный отдых</option>
+                <option value="individual">🗺 Индивидуальный маршрут</option>
+              </select>
+            </div>
+
+            <!-- Сообщение -->
+            <div class="form-group">
+              <label for="message">Сообщение <span class="req">*</span></label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-control"
+                placeholder="Опишите ваш запрос: даты поездки, количество человек, бюджет и любые пожелания..."
+                required
+              ></textarea>
+              <span class="form-error"></span>
+            </div>
+
+            <!-- Согласие -->
+            <div class="form-group" style="display:flex;gap:10px;align-items:flex-start;margin-bottom:24px;">
+              <input type="checkbox" id="agree" name="agree" style="margin-top:3px;accent-color:var(--navy);width:16px;height:16px;flex-shrink:0;">
+              <label for="agree" style="font-size:.82rem;font-weight:400;color:var(--gray-600);text-transform:none;letter-spacing:0;">
+                Я согласен(а) на обработку персональных данных в соответствии с
+                <a href="#" style="color:var(--navy);text-decoration:underline;">политикой конфиденциальности</a>
+              </label>
+            </div>
+
+            <!-- Кнопка отправки -->
+            <button type="submit" class="form-submit-btn" id="submitBtn">
+              ✉ Отправить сообщение
+            </button>
+          </form>
+
+          <!-- Сообщение об успешной отправке -->
+          <div class="success-message" id="successMessage">
+            <div class="success-icon">✅</div>
+            <h4>Сообщение отправлено!</h4>
+            <p>Спасибо! Наш менеджер свяжется с вами в течение 30 минут в рабочее время.</p>
+            <br>
+            <button id="resetBtn" class="btn btn-outline" style="margin:0 auto;">Отправить ещё</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       БЛОК С КАРТОЙ
+       ====================================================== -->
+  <section class="section-sm bg-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag fade-up">Мы на карте</span>
+        <h2 class="fade-up delay-1">Как нас найти</h2>
+        <div class="divider fade-up delay-2"></div>
+      </div>
+
+      <div class="map-block fade-up delay-2">
+        <!-- Плейсхолдер карты (можно заменить на iframe Google Maps) -->
+        <div class="map-placeholder">
+          <div class="map-icon">🗺</div>
+          <p>Интерактивная карта</p>
+          <p style="font-size:.8rem;opacity:.65;">г. Баку, ул. Низами, д. 46</p>
+        </div>
+
+        <!-- Бейдж с адресом поверх карты -->
+        <div class="map-address-badge">
+          <h5>🏢 ВояжСервис — Офис в Баку</h5>
+          <p>ул. Низами, д. 46, офис 215<br>м. Низами, 5 мин. пешком</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       ДОПОЛНИТЕЛЬНЫЕ СПОСОБЫ СВЯЗИ
+       ====================================================== -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag fade-up">Альтернативные способы</span>
+        <h2 class="fade-up delay-1">Другие каналы связи</h2>
+        <div class="divider fade-up delay-2"></div>
+      </div>
+      <div class="advantages-grid">
+        <div class="advantage-card on-light fade-up" style="border:1px solid var(--gray-200);">
+          <div class="advantage-icon" style="background:rgba(0,136,204,0.1);border-color:rgba(0,136,204,0.2);">TG</div>
+          <h4>Telegram</h4>
+          <p>Напишите нам в Telegram — ответим быстро даже в выходные</p>
+          <a href="#" class="btn btn-outline" style="margin-top:16px;padding:10px 20px;font-size:.78rem;">@VoyageService</a>
+        </div>
+        <div class="advantage-card on-light fade-up delay-1" style="border:1px solid var(--gray-200);">
+          <div class="advantage-icon" style="background:rgba(37,211,102,0.1);border-color:rgba(37,211,102,0.2);">WA</div>
+          <h4>WhatsApp</h4>
+          <p>Удобный чат для быстрых вопросов и отправки документов</p>
+          <a href="#" class="btn btn-outline" style="margin-top:16px;padding:10px 20px;font-size:.78rem;">+994 (12) 555-12-34</a>
+        </div>
+        <div class="advantage-card on-light fade-up delay-2" style="border:1px solid var(--gray-200);">
+          <div class="advantage-icon" style="background:rgba(99,37,211,0.1);border-color:rgba(99,37,211,0.2);">VK</div>
+          <h4>ВКонтакте</h4>
+          <p>Следите за новостями и спецпредложениями в нашей группе</p>
+          <a href="#" class="btn btn-outline" style="margin-top:16px;padding:10px 20px;font-size:.78rem;">vk.com/voyageservice</a>
+        </div>
+        <div class="advantage-card on-light fade-up delay-3" style="border:1px solid var(--gray-200);">
+          <div class="advantage-icon">📞</div>
+          <h4>Обратный звонок</h4>
+          <p>Оставьте свой номер, и наш менеджер перезвонит вам в течение 15 минут</p>
+          <a href="#callbackForm" class="btn btn-outline" style="margin-top:16px;padding:10px 20px;font-size:.78rem;">Заказать звонок</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ФУТЕР -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">✈</div>
+            <div class="nav-logo-text">
+              <span class="nav-logo-name">ВояжСервис</span>
+              <span class="nav-logo-sub">Travel Agency</span>
+            </div>
+          </a>
+          <p>Профессиональное туристическое агентство. Мечтайте, а организацию оставьте нам.</p>
+          <div class="social-links">
+            <a href="#" class="social-link">VK</a>
+            <a href="#" class="social-link">TG</a>
+            <a href="#" class="social-link">IG</a>
+            <a href="#" class="social-link">WA</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Навигация</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"    class="footer-link">Главная</a></li>
+            <li><a href="services.html" class="footer-link">Услуги</a></li>
+            <li><a href="system.html"   class="footer-link">О системе</a></li>
+            <li><a href="contacts.html" class="footer-link">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Направления</h5>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Пляжный отдых</a></li>
+            <li><a href="services.html" class="footer-link">Европа</a></li>
+            <li><a href="services.html" class="footer-link">Азия</a></li>
+            <li><a href="services.html" class="footer-link">Активный туризм</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Контакты</h5>
+          <ul class="footer-links">
+            <li><span class="footer-link">📍 Баку, ул. Низами, 46</span></li>
+            <li><a href="tel:+994125551234" class="footer-link">📞 +994 (12) 555-12-34</a></li>
+            <li><a href="mailto:info@voyageservice.az" class="footer-link">✉ info@voyageservice.az</a></li>
+            <li><span class="footer-link">🕐 Пн–Вс: 9:00–20:00</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 ВояжСервис. Все права защищены.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Пользовательское соглашение</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contacts.js"></script>
+</body>
+</html>

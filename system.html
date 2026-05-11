@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Информационная система — ВояжСервис</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='85'>✈</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- НАВБАР -->
+  <nav class="navbar solid" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">✈</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">ВояжСервис</span>
+          <span class="nav-logo-sub">Travel Agency</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"    class="nav-link">Главная</a></li>
+        <li><a href="services.html" class="nav-link">Услуги</a></li>
+        <li><a href="system.html"   class="nav-link active">О системе</a></li>
+        <li><a href="contacts.html" class="nav-link nav-cta">Контакты</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="container">
+      <div class="page-hero-content">
+        <div class="breadcrumb">
+          <a href="index.html">Главная</a>
+          <span>›</span>
+          <span>Информационная система</span>
+        </div>
+        <h1>Онлайн информационная система</h1>
+        <p>Современная платформа для автоматизации туристического бизнеса — бронирование, CRM, аналитика.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       ФУНКЦИИ СИСТЕМЫ
+       ====================================================== -->
+  <section class="section system-section bg-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag fade-up">Возможности</span>
+        <h2 class="fade-up delay-1">Что умеет наша система</h2>
+        <div class="divider fade-up delay-2"></div>
+        <p class="fade-up delay-3">Комплексная платформа охватывает все процессы туристического агентства</p>
+      </div>
+
+      <div class="system-features-grid">
+        <div class="sys-feature-card fade-up">
+          <div class="sys-icon">🖥</div>
+          <h4>Онлайн-бронирование</h4>
+          <p>Клиенты бронируют туры через сайт 24/7 без необходимости звонить или посещать офис. Мгновенное подтверждение и электронный ваучер.</p>
+        </div>
+        <div class="sys-feature-card fade-up delay-1">
+          <div class="sys-icon">👥</div>
+          <h4>Управление клиентами (CRM)</h4>
+          <p>Полная база данных клиентов с историей поездок, предпочтениями и документами. Автоматические напоминания и персональные предложения.</p>
+        </div>
+        <div class="sys-feature-card fade-up delay-2">
+          <div class="sys-icon">🗄</div>
+          <h4>База данных туров</h4>
+          <p>Централизованное хранилище информации о турах, ценах, наличии мест и условиях. Автоматическое обновление цен от туроператоров.</p>
+        </div>
+        <div class="sys-feature-card fade-up delay-3">
+          <div class="sys-icon">💳</div>
+          <h4>Платёжный модуль</h4>
+          <p>Интеграция с платёжными системами: карты Visa/MC, СБП, электронные кошельки. SSL-шифрование и защита транзакций.</p>
+        </div>
+        <div class="sys-feature-card fade-up delay-4">
+          <div class="sys-icon">📊</div>
+          <h4>Аналитика и отчёты</h4>
+          <p>Дашборды с ключевыми метриками: продажи, популярные направления, загрузка туров, конверсия. Экспорт в Excel/PDF.</p>
+        </div>
+        <div class="sys-feature-card fade-up delay-5">
+          <div class="sys-icon">📧</div>
+          <h4>Уведомления и рассылки</h4>
+          <p>Автоматические SMS и Email уведомления о статусе бронирования, спецпредложениях и напоминаниях о предстоящих поездках.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       КАК ЭТО РАБОТАЕТ — ШАГИ
+       ====================================================== -->
+  <section class="section process-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag fade-up">Процесс</span>
+        <h2 class="fade-up delay-1">Как работает система</h2>
+        <div class="divider fade-up delay-2"></div>
+        <p class="fade-up delay-3">Простой и понятный путь от выбора тура до отдыха</p>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step fade-up">
+          <div class="step-number">1</div>
+          <h4>Поиск и выбор</h4>
+          <p>Клиент ищет тур по направлению, датам, бюджету и типу отдыха через удобный фильтр</p>
+        </div>
+        <div class="process-step fade-up delay-1">
+          <div class="step-number">2</div>
+          <h4>Бронирование</h4>
+          <p>Заполнение формы с данными, выбор дат и дополнительных услуг — 3 минуты</p>
+        </div>
+        <div class="process-step fade-up delay-2">
+          <div class="step-number">3</div>
+          <h4>Оплата</h4>
+          <p>Безопасная онлайн-оплата через защищённый платёжный шлюз любым удобным способом</p>
+        </div>
+        <div class="process-step fade-up delay-3">
+          <div class="step-number">4</div>
+          <h4>Подтверждение</h4>
+          <p>Автоматическая отправка ваучеров, билетов и документов на email клиента</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       ДЕТАЛЬНЫЕ ФУНКЦИИ (ТАБЫ)
+       ====================================================== -->
+  <section class="section tabs-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag fade-up">Модули системы</span>
+        <h2 class="fade-up delay-1">Детальное описание функций</h2>
+        <div class="divider fade-up delay-2"></div>
+      </div>
+
+      <!-- Навигация по табам -->
+      <nav class="tabs-nav" role="tablist">
+        <button class="tab-btn active" data-tab="tab-booking"  role="tab">📅 Бронирование</button>
+        <button class="tab-btn"        data-tab="tab-crm"      role="tab">👥 CRM клиентов</button>
+        <button class="tab-btn"        data-tab="tab-tours"    role="tab">🗺 База туров</button>
+        <button class="tab-btn"        data-tab="tab-analytics"role="tab">📈 Аналитика</button>
+      </nav>
+
+      <!-- ТАБ 1: Бронирование -->
+      <div class="tab-pane active" id="tab-booking" role="tabpanel">
+        <div class="tab-content-grid">
+          <div class="tab-text">
+            <h3>Модуль онлайн-бронирования</h3>
+            <p>Система позволяет клиентам самостоятельно бронировать туры через веб-интерфейс в любое время суток без участия менеджера.</p>
+            <p>После оплаты система автоматически формирует пакет документов и отправляет подтверждение клиенту.</p>
+            <ul class="tab-checklist">
+              <li>Фильтрация туров по 12 параметрам</li>
+              <li>Мгновенная проверка наличия мест</li>
+              <li>Онлайн-оплата (карты, СБП, кошельки)</li>
+              <li>Автоматическая генерация ваучеров</li>
+              <li>SMS и Email уведомления</li>
+              <li>Личный кабинет с историей заказов</li>
+            </ul>
+          </div>
+          <div class="tab-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=700" alt="Система бронирования">
+          </div>
+        </div>
+      </div>
+
+      <!-- ТАБ 2: CRM -->
+      <div class="tab-pane" id="tab-crm" role="tabpanel">
+        <div class="tab-content-grid">
+          <div class="tab-text">
+            <h3>CRM — Управление клиентами</h3>
+            <p>Полноценная CRM-система для хранения информации о клиентах, истории их заказов и управления взаимоотношениями.</p>
+            <p>Менеджеры видят полный профиль каждого клиента и могут предложить персонализированные туры.</p>
+            <ul class="tab-checklist">
+              <li>Единая база данных клиентов</li>
+              <li>История всех бронирований и поездок</li>
+              <li>Хранение копий документов (паспортов)</li>
+              <li>Сегментация клиентов по интересам</li>
+              <li>Автоматические напоминания менеджерам</li>
+              <li>Персонализированные email-рассылки</li>
+            </ul>
+          </div>
+          <div class="tab-image">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=700" alt="CRM система">
+          </div>
+        </div>
+      </div>
+
+      <!-- ТАБ 3: База туров -->
+      <div class="tab-pane" id="tab-tours" role="tabpanel">
+        <div class="tab-content-grid">
+          <div class="tab-text">
+            <h3>База данных туров</h3>
+            <p>Централизованный каталог всех туров с актуальными ценами, описаниями, фотографиями и условиями.</p>
+            <p>Автоматическая синхронизация цен с туроператорами через API-интеграцию.</p>
+            <ul class="tab-checklist">
+              <li>Хранение 500+ туров и направлений</li>
+              <li>Автоматическое обновление цен</li>
+              <li>Управление доступностью и квотами</li>
+              <li>Загрузка фото и медиафайлов</li>
+              <li>Категоризация и теги для поиска</li>
+              <li>Интеграция с XML-фидами операторов</li>
+            </ul>
+          </div>
+          <div class="tab-image">
+            <img src="https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=700" alt="База туров">
+          </div>
+        </div>
+      </div>
+
+      <!-- ТАБ 4: Аналитика -->
+      <div class="tab-pane" id="tab-analytics" role="tabpanel">
+        <div class="tab-content-grid">
+          <div class="tab-text">
+            <h3>Аналитика и отчётность</h3>
+            <p>Дашборды с ключевыми показателями бизнеса в реальном времени. Руководитель всегда в курсе ситуации.</p>
+            <p>Детальные отчёты помогают принимать обоснованные решения и планировать стратегию.</p>
+            <ul class="tab-checklist">
+              <li>Дашборд продаж в реальном времени</li>
+              <li>Рейтинг популярных направлений</li>
+              <li>Анализ сезонности спроса</li>
+              <li>Эффективность работы менеджеров</li>
+              <li>Финансовые отчёты и прогнозы</li>
+              <li>Экспорт данных в Excel и PDF</li>
+            </ul>
+          </div>
+          <div class="tab-image">
+            <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=700" alt="Аналитика">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       ИНФО-БЛОКИ С ЦИФРАМИ
+       ====================================================== -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag fade-up">Результаты автоматизации</span>
+        <h2 class="fade-up delay-1">Система в цифрах</h2>
+        <div class="divider fade-up delay-2"></div>
+      </div>
+      <div class="info-blocks">
+        <div class="info-block fade-up">
+          <span class="ib-number" data-target="3" data-suffix=" мин">0</span>
+          <h4>Среднее время бронирования</h4>
+          <p>Клиент оформляет заказ без звонков в офис</p>
+        </div>
+        <div class="info-block fade-up delay-1">
+          <span class="ib-number" data-target="70" data-suffix="%">0</span>
+          <h4>Снижение нагрузки на менеджеров</h4>
+          <p>Рутинные задачи автоматизированы системой</p>
+        </div>
+        <div class="info-block fade-up delay-2">
+          <span class="ib-number" data-target="24" data-suffix="/7">0</span>
+          <h4>Работа без выходных</h4>
+          <p>Система принимает заказы круглосуточно</p>
+        </div>
+      </div>
+
+      <!-- Прогресс-бары: эффективность -->
+      <div class="progress-section mt-56">
+        <h3 style="text-align:center;margin-bottom:36px;" class="fade-up">Эффективность автоматизации</h3>
+        <div style="max-width:680px;margin:0 auto;">
+          <div class="progress-item fade-up">
+            <div class="progress-label"><span>Скорость обработки заявок</span><span>94%</span></div>
+            <div class="progress-bar"><div class="progress-fill gold" data-width="94"></div></div>
+          </div>
+          <div class="progress-item fade-up delay-1">
+            <div class="progress-label"><span>Точность данных и отчётов</span><span>99%</span></div>
+            <div class="progress-bar"><div class="progress-fill" data-width="99"></div></div>
+          </div>
+          <div class="progress-item fade-up delay-2">
+            <div class="progress-label"><span>Удовлетворённость клиентов</span><span>98%</span></div>
+            <div class="progress-bar"><div class="progress-fill gold" data-width="98"></div></div>
+          </div>
+          <div class="progress-item fade-up delay-3">
+            <div class="progress-label"><span>Сокращение ошибок бронирования</span><span>87%</span></div>
+            <div class="progress-bar"><div class="progress-fill" data-width="87"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ (АККОРДЕОН)
+       ====================================================== -->
+  <section class="section bg-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag fade-up">FAQ</span>
+        <h2 class="fade-up delay-1">Часто задаваемые вопросы</h2>
+        <div class="divider fade-up delay-2"></div>
+      </div>
+      <div style="max-width:780px;margin:0 auto;" class="fade-up delay-2">
+        <div class="accordion">
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h4>Как работает онлайн-бронирование?</h4>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                <p>Клиент выбирает тур на сайте, заполняет форму с персональными данными, выбирает даты и дополнительные услуги. После онлайн-оплаты система автоматически формирует ваучер и отправляет его на email. Весь процесс занимает около 3–5 минут.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h4>Безопасно ли вводить данные карты на сайте?</h4>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                <p>Да, абсолютно безопасно. Все платёжные транзакции обрабатываются через сертифицированный платёжный шлюз с SSL-шифрованием. Мы не храним данные банковских карт — они передаются напрямую в банк по зашифрованному каналу. Система соответствует стандарту PCI DSS.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h4>Могу ли я изменить или отменить бронирование?</h4>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                <p>Да, через личный кабинет вы можете управлять бронированием. Условия изменения и отмены зависят от конкретного тура и туроператора — они указаны в карточке тура до оплаты. Обычно изменения до 30 дней бесплатны, ближе к дате отъезда может применяться штраф.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h4>Как менеджеры работают с системой?</h4>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                <p>Менеджеры имеют доступ к административной панели, где видят все заявки, статусы бронирований и профили клиентов. Система отправляет им уведомления о новых заказах, требующих внимания. Рутинные операции автоматизированы, что позволяет менеджерам сосредоточиться на продажах.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h4>Какие данные хранятся в системе о клиентах?</h4>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                <p>Система хранит контактные данные (ФИО, телефон, email), информацию о прошлых поездках, предпочтениях и загруженные копии документов (паспортов). Все данные обрабатываются в соответствии с 152-ФЗ «О персональных данных» и хранятся на защищённых серверах в России.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Хотите попробовать систему?</h2>
+      <p>Забронируйте первый тур онлайн прямо сейчас — это просто и быстро</p>
+      <a href="services.html" class="btn btn-primary">🌍 Перейти к турам</a>
+    </div>
+  </section>
+
+  <!-- ФУТЕР -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">✈</div>
+            <div class="nav-logo-text">
+              <span class="nav-logo-name">ВояжСервис</span>
+              <span class="nav-logo-sub">Travel Agency</span>
+            </div>
+          </a>
+          <p>Профессиональное туристическое агентство с онлайн-системой бронирования.</p>
+          <div class="social-links">
+            <a href="#" class="social-link">VK</a>
+            <a href="#" class="social-link">TG</a>
+            <a href="#" class="social-link">IG</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Навигация</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"    class="footer-link">Главная</a></li>
+            <li><a href="services.html" class="footer-link">Услуги</a></li>
+            <li><a href="system.html"   class="footer-link">О системе</a></li>
+            <li><a href="contacts.html" class="footer-link">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Система</h5>
+          <ul class="footer-links">
+            <li><span class="footer-link">🖥 Онлайн-бронирование</span></li>
+            <li><span class="footer-link">👥 CRM клиентов</span></li>
+            <li><span class="footer-link">📊 Аналитика</span></li>
+            <li><span class="footer-link">💳 Оплата онлайн</span></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Контакты</h5>
+          <ul class="footer-links">
+            <li><a href="tel:+994125551234" class="footer-link">📞 +994 (12) 555-12-34</a></li>
+            <li><a href="mailto:info@voyageservice.az" class="footer-link">✉ info@voyageservice.az</a></li>
+            <li><span class="footer-link">📍 Баку, ул. Низами, 46</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 ВояжСервис. Все права защищены.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/system.js"></script>
+</body>
+</html>

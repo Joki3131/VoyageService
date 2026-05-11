@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Услуги и туры — ВояжСервис</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='85'>✈</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- НАВБАР -->
+  <nav class="navbar solid" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">✈</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">ВояжСервис</span>
+          <span class="nav-logo-sub">Travel Agency</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"    class="nav-link">Главная</a></li>
+        <li><a href="services.html" class="nav-link active">Услуги</a></li>
+        <li><a href="system.html"   class="nav-link">О системе</a></li>
+        <li><a href="contacts.html" class="nav-link nav-cta">Контакты</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="container">
+      <div class="page-hero-content">
+        <div class="breadcrumb">
+          <a href="index.html">Главная</a>
+          <span>›</span>
+          <span>Услуги и туры</span>
+        </div>
+        <h1>Услуги и туры</h1>
+        <p>Выбирайте из сотен направлений по всему миру. Фильтруйте по категориям и сравнивайте цены.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       КАТАЛОГ ТУРОВ
+       ====================================================== -->
+  <section class="section services-section">
+    <div class="container">
+
+      <!-- Панель фильтрации -->
+      <div class="filter-bar" role="group" aria-label="Фильтр по категориям">
+        <button class="filter-btn active" data-filter="all">🌍 Все туры</button>
+        <button class="filter-btn" data-filter="beach">🏖 Пляжный отдых</button>
+        <button class="filter-btn" data-filter="excursion">🏛 Экскурсионные</button>
+        <button class="filter-btn" data-filter="active">🏔 Активный отдых</button>
+        <button class="filter-btn" data-filter="health">🧘 Оздоровительные</button>
+      </div>
+
+      <!-- Панель сортировки и счётчик -->
+      <div class="sort-bar">
+        <span class="sort-label">Найдено туров: <strong id="tourCount">9</strong></span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <label for="sortSelect" style="font-size:.82rem;color:var(--gray-600);font-weight:500;">Сортировать:</label>
+          <select class="sort-select" id="sortSelect">
+            <option value="default">По умолчанию</option>
+            <option value="price-asc">Цена: по возрастанию</option>
+            <option value="price-desc">Цена: по убыванию</option>
+            <option value="days-asc">По продолжительности</option>
+            <option value="name-asc">По названию (А–Я)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Сетка карточек -->
+      <div class="services-grid">
+
+        <!-- 1. Мальдивы -->
+        <div class="service-card fade-up"
+             data-category="beach" data-price="89900" data-duration="10" data-name="Мальдивы">
+          <div class="service-card-image">
+            <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?q=80&w=700" alt="Мальдивы">
+            <span class="service-cat-badge">Пляжный</span>
+          </div>
+          <div class="service-card-body">
+            <h3>Мальдивы — Рай на Земле</h3>
+            <p>Бунгало над водой, кораллы, морские черепахи и бесконечный синий горизонт. Идеальный отдых для пар.</p>
+            <div class="service-details">
+              <span>📍 Мальдивы</span>
+              <span>⏱ 10 ночей</span>
+              <span>✈ Перелёт включён</span>
+            </div>
+            <div class="tour-extra-details">
+              <div class="tour-extra-details-inner">
+                <ul>
+                  <li>Перелёт Москва–Мале бизнес-класс</li>
+                  <li>Трансфер на катере до острова</li>
+                  <li>Проживание на базе All Inclusive</li>
+                  <li>Дайвинг и снорклинг в подарок</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="service-card-footer">
+            <div class="service-price">
+              2 999 ₼
+              <small>за человека</small>
+            </div>
+            <div style="display:flex;gap:8px;">
+              <button class="btn-details filter-btn" style="padding:8px 14px;border-radius:8px;font-size:.78rem;">Подробнее ↓</button>
+              <a href="contacts.html" class="btn btn-gold" style="padding:9px 18px;font-size:.78rem;">Купить</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Турция -->
+        <div class="service-card fade-up delay-1"
+             data-category="beach" data-price="38500" data-duration="7" data-name="Турция Анталья">
+          <div class="service-card-image">
+            <img src="https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?q=80&w=700" alt="Турция">
+            <span class="service-cat-badge">Пляжный</span>
+          </div>
+          <div class="service-card-body">
+            <h3>Турция — Анталья</h3>
+            <p>Лазурные воды Средиземного моря, роскошные 5-звёздочные отели и насыщенная культурная программа.</p>
+            <div class="service-details">
+              <span>📍 Анталья</span>
+              <span>⏱ 7 ночей</span>
+              <span>✈ Перелёт включён</span>
+            </div>
+            <div class="tour-extra-details">
+              <div class="tour-extra-details-inner">
+                <ul>
+                  <li>Чартерный рейс из Москвы</li>
+                  <li>Отель 5* Ultra All Inclusive</li>
+                  <li>Трансфер аэропорт–отель</li>
+                  <li>Экскурсия в Каппадокию (опционально)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="service-card-footer">
+            <div class="service-price">
+              1 299 ₼
+              <small>за человека</small>
+            </div>
+            <div style="display:flex;gap:8px;">
+              <button class="btn-details filter-btn" style="padding:8px 14px;border-radius:8px;font-size:.78rem;">Подробнее ↓</button>
+              <a href="contacts.html" class="btn btn-gold" style="padding:9px 18px;font-size:.78rem;">Купить</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Таиланд -->
+        <div class="service-card fade-up delay-2"
+             data-category="beach" data-price="67800" data-duration="12" data-name="Таиланд">
+          <div class="service-card-image">
+            <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?q=80&w=700" alt="Таиланд">
+            <span class="service-cat-badge">Пляжный</span>
+          </div>
+          <div class="service-card-body">
+            <h3>Таиланд — Пхукет</h3>
+            <p>Экзотические пляжи, буддийские храмы, тайская кухня и незабываемый тайский массаж.</p>
+            <div class="service-details">
+              <span>📍 Пхукет</span>
+              <span>⏱ 12 ночей</span>
+              <span>✈ Перелёт включён</span>
+            </div>
+            <div class="tour-extra-details">
+              <div class="tour-extra-details-inner">
+                <ul>
+                  <li>Прямой рейс Москва–Бангкок</li>
+                  <li>Отель 4* All Inclusive + пляж</li>
+                  <li>Экскурсия на острова Phi Phi</li>
+                  <li>Тайский массаж в подарок</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="service-card-footer">
+            <div class="service-price">
+              2 249 ₼
+              <small>за человека</small>
+            </div>
+            <div style="display:flex;gap:8px;">
+              <button class="btn-details filter-btn" style="padding:8px 14px;border-radius:8px;font-size:.78rem;">Подробнее ↓</button>
+              <a href="contacts.html" class="btn btn-gold" style="padding:9px 18px;font-size:.78rem;">Купить</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Париж -->
+        <div class="service-card fade-up"
+             data-category="excursion" data-price="54500" data-duration="7" data-name="Париж">
+          <div class="service-card-image">
+            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=700" alt="Париж">
+            <span class="service-cat-badge">Экскурсионный</span>
+          </div>
+          <div class="service-card-body">
+            <h3>Классический Париж</h3>
+            <p>Эйфелева башня, Лувр, Монмартр, прогулки по Сене и изысканная французская кухня.</p>
+            <div class="service-details">
+              <span>📍 Париж, Франция</span>
+              <span>⏱ 7 ночей</span>
+              <span>🏨 Завтрак</span>
+            </div>
+            <div class="tour-extra-details">
+              <div class="tour-extra-details-inner">
+                <ul>
+                  <li>Перелёт включён</li>
+                  <li>Отель 4* в центре Парижа</li>
+                  <li>Экскурсия по Лувру с гидом</li>
+                  <li>Ужин в ресторане на Эйфелевой башне</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="service-card-footer">
+            <div class="service-price">
+              1 799 ₼
+              <small>за человека</small>
+            </div>
+            <div style="display:flex;gap:8px;">
+              <button class="btn-details filter-btn" style="padding:8px 14px;border-radius:8px;font-size:.78rem;">Подробнее ↓</button>
+              <a href="contacts.html" class="btn btn-gold" style="padding:9px 18px;font-size:.78rem;">Купить</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Рим -->
+        <div class="service-card fade-up delay-1"
+             data-category="excursion" data-price="49900" data-duration="6" data-name="Рим">
+          <div class="service-card-image">
+            <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=700" alt="Рим">
+            <span class="service-cat-badge">Экскурсионный</span>
+          </div>
+          <div class="service-card-body">
+            <h3>Вечный город — Рим</h3>
+            <p>Колизей, Ватикан, фонтан Треви, уличная пицца и настоящий итальянский темперамент.</p>
+            <div class="service-details">
+              <span>📍 Рим, Италия</span>
+              <span>⏱ 6 ночей</span>
+              <span>🏨 Завтрак</span>
+            </div>
+            <div class="tour-extra-details">
+              <div class="tour-extra-details-inner">
+                <ul>
+                  <li>Авиабилет Москва–Рим</li>
+                  <li>Отель 4* в историческом центре</li>
+                  <li>Экскурсия в Ватикан с куратором</li>
+                  <li>Вечерняя прогулка по Риму</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="service-card-footer">
+            <div class="service-price">
+              1 649 ₼
+              <small>за человека</small>
+            </div>
+            <div style="display:flex;gap:8px;">
+              <button class="btn-details filter-btn" style="padding:8px 14px;border-radius:8px;font-size:.78rem;">Подробнее ↓</button>
+              <a href="contacts.html" class="btn btn-gold" style="padding:9px 18px;font-size:.78rem;">Купить</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. ОАЭ -->
+        <div class="service-card fade-up delay-2"
+             data-category="excursion" data-price="72000" data-duration="8" data-name="ОАЭ Дубай">
+          <div class="service-card-image">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=700" alt="Дубай">
+            <span class="service-cat-badge">Экскурсионный</span>
+          </div>
+          <div class="service-card-body">
+            <h3>Дубай — Город будущего</h3>
+            <p>Бурдж-Халифа, сафари в пустыне, торговые моллы и роскошные пляжи Персидского залива.</p>
+            <div class="service-details">
+              <span>📍 Дубай, ОАЭ</span>
+              <span>⏱ 8 ночей</span>
+              <span>✈ Перелёт включён</span>
+            </div>
+            <div class="tour-extra-details">
+              <div class="tour-extra-details-inner">
+                <ul>
+                  <li>Прямой рейс Москва–Дубай</li>
+                  <li>Отель 5* Palm Jumeirah</li>
+                  <li>Сафари в пустыне + ужин</li>
+                  <li>Посещение смотровой Бурдж-Халифа</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="service-card-footer">
+            <div class="service-price">
+              2 399 ₼
+              <small>за человека</small>
+            </div>
+            <div style="display:flex;gap:8px;">
+              <button class="btn-details filter-btn" style="padding:8px 14px;border-radius:8px;font-size:.78rem;">Подробнее ↓</button>
+              <a href="contacts.html" class="btn btn-gold" style="padding:9px 18px;font-size:.78rem;">Купить</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Алтай -->
+        <div class="service-card fade-up"
+             data-category="active" data-price="28900" data-duration="8" data-name="Алтай">
+          <div class="service-card-image">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=700" alt="Алтай">
+            <span class="service-cat-badge">Активный</span>
+          </div>
+          <div class="service-card-body">
+            <h3>Алтай — Горные вершины</h3>
+            <p>Величественные горы, прозрачные реки, треккинг и конные прогулки в сердце России.</p>
+            <div class="service-details">
+              <span>📍 Республика Алтай</span>
+              <span>⏱ 8 дней</span>
+              <span>🏕 Глэмпинг</span>
+            </div>
+            <div class="tour-extra-details">
+              <div class="tour-extra-details-inner">
+                <ul>
+                  <li>Перелёт Москва–Горно-Алтайск</li>
+                  <li>Размещение в глэмпинге</li>
+                  <li>Треккинг к Мультинским озёрам</li>
+                  <li>Рафтинг и конная прогулка</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="service-card-footer">
+            <div class="service-price">
+              949 ₼
+              <small>за человека</small>
+            </div>
+            <div style="display:flex;gap:8px;">
+              <button class="btn-details filter-btn" style="padding:8px 14px;border-radius:8px;font-size:.78rem;">Подробнее ↓</button>
+              <a href="contacts.html" class="btn btn-gold" style="padding:9px 18px;font-size:.78rem;">Купить</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Норвегия -->
+        <div class="service-card fade-up delay-1"
+             data-category="active" data-price="95000" data-duration="10" data-name="Норвегия">
+          <div class="service-card-image">
+            <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?q=80&w=700" alt="Норвегия">
+            <span class="service-cat-badge">Активный</span>
+          </div>
+          <div class="service-card-body">
+            <h3>Норвегия — Фьорды и сияние</h3>
+            <p>Фьорды, северное сияние, викинги и незабываемые пейзажи Скандинавии.</p>
+            <div class="service-details">
+              <span>📍 Норвегия</span>
+              <span>⏱ 10 ночей</span>
+              <span>✈ Перелёт включён</span>
+            </div>
+            <div class="tour-extra-details">
+              <div class="tour-extra-details-inner">
+                <ul>
+                  <li>Перелёт Москва–Осло</li>
+                  <li>Круиз по Фломмскому фьорду</li>
+                  <li>Охота за северным сиянием</li>
+                  <li>Музей корабля викингов в Осло</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="service-card-footer">
+            <div class="service-price">
+              3 199 ₼
+              <small>за человека</small>
+            </div>
+            <div style="display:flex;gap:8px;">
+              <button class="btn-details filter-btn" style="padding:8px 14px;border-radius:8px;font-size:.78rem;">Подробнее ↓</button>
+              <a href="contacts.html" class="btn btn-gold" style="padding:9px 18px;font-size:.78rem;">Купить</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Баден-Баден -->
+        <div class="service-card fade-up delay-2"
+             data-category="health" data-price="62000" data-duration="9" data-name="Баден-Баден">
+          <div class="service-card-image">
+            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=700" alt="СПА">
+            <span class="service-cat-badge">Оздоровительный</span>
+          </div>
+          <div class="service-card-body">
+            <h3>Баден-Баден — СПА и термы</h3>
+            <p>Знаменитые термальные источники, оздоровительные процедуры и изысканный отдых в Германии.</p>
+            <div class="service-details">
+              <span>📍 Германия</span>
+              <span>⏱ 9 ночей</span>
+              <span>🧘 СПА включён</span>
+            </div>
+            <div class="tour-extra-details">
+              <div class="tour-extra-details-inner">
+                <ul>
+                  <li>Перелёт в Штутгарт</li>
+                  <li>Отель 5* с термальным СПА</li>
+                  <li>Программа оздоровления (7 дней)</li>
+                  <li>Экскурсия в Баден-Баден + казино</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="service-card-footer">
+            <div class="service-price">
+              2 099 ₼
+              <small>за человека</small>
+            </div>
+            <div style="display:flex;gap:8px;">
+              <button class="btn-details filter-btn" style="padding:8px 14px;border-radius:8px;font-size:.78rem;">Подробнее ↓</button>
+              <a href="contacts.html" class="btn btn-gold" style="padding:9px 18px;font-size:.78rem;">Купить</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /services-grid -->
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Не нашли подходящий тур?</h2>
+      <p>Свяжитесь с нами — подберём индивидуальный маршрут специально для вас</p>
+      <a href="contacts.html" class="btn btn-primary">📩 Написать нам</a>
+    </div>
+  </section>
+
+  <!-- ФУТЕР -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">✈</div>
+            <div class="nav-logo-text">
+              <span class="nav-logo-name">ВояжСервис</span>
+              <span class="nav-logo-sub">Travel Agency</span>
+            </div>
+          </a>
+          <p>Профессиональное туристическое агентство. Более 500 направлений и 1200+ довольных клиентов.</p>
+          <div class="social-links">
+            <a href="#" class="social-link">VK</a>
+            <a href="#" class="social-link">TG</a>
+            <a href="#" class="social-link">IG</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Навигация</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"    class="footer-link">Главная</a></li>
+            <li><a href="services.html" class="footer-link">Услуги</a></li>
+            <li><a href="system.html"   class="footer-link">О системе</a></li>
+            <li><a href="contacts.html" class="footer-link">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Категории</h5>
+          <ul class="footer-links">
+            <li><span class="footer-link">🏖 Пляжный отдых</span></li>
+            <li><span class="footer-link">🏛 Экскурсионные</span></li>
+            <li><span class="footer-link">🏔 Активный</span></li>
+            <li><span class="footer-link">🧘 Оздоровительные</span></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Контакты</h5>
+          <ul class="footer-links">
+            <li><a href="tel:+994125551234" class="footer-link">📞 +994 (12) 555-12-34</a></li>
+            <li><a href="mailto:info@voyageservice.az" class="footer-link">✉ info@voyageservice.az</a></li>
+            <li><span class="footer-link">📍 Баку, ул. Низами, 46</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 ВояжСервис. Все права защищены.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/services.js"></script>
+</body>
+</html>

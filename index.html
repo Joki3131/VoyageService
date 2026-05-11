@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ВояжСервис — Туристическое агентство</title>
+  <meta name="description" content="Профессиональное туристическое агентство с онлайн-системой бронирования туров">
+  <!-- Favicon SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='85'>✈</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ======================================================
+       НАВБАР
+       ====================================================== -->
+  <nav class="navbar transparent" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">✈</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">ВояжСервис</span>
+          <span class="nav-logo-sub">Travel Agency</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"    class="nav-link active">Главная</a></li>
+        <li><a href="services.html" class="nav-link">Услуги</a></li>
+        <li><a href="system.html"   class="nav-link">О системе</a></li>
+        <li><a href="contacts.html" class="nav-link nav-cta">Контакты</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======================================================
+       HERO СЕКЦИЯ
+       ====================================================== -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-tag">Добро пожаловать в мир путешествий</div>
+        <h1>Откройте мир<br>с <em>ВояжСервис</em></h1>
+        <p class="hero-desc">
+          Профессиональное туристическое агентство с современной онлайн-системой бронирования.
+          Более 500 направлений, персональный подход и незабываемые впечатления.
+        </p>
+        <div class="hero-actions">
+          <a href="services.html" class="btn btn-gold">🌍 Выбрать тур</a>
+          <a href="system.html"   class="btn btn-outline-white">О системе →</a>
+        </div>
+      </div>
+    </div>
+    <!-- Иконка прокрутки вниз -->
+    <div class="hero-scroll">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+      Прокрутите вниз
+    </div>
+  </section>
+
+  <!-- ======================================================
+       СТАТИСТИКА
+       ====================================================== -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item fade-up">
+          <span class="stat-number" data-target="1200" data-suffix="+">0</span>
+          <span class="stat-label">Довольных клиентов</span>
+        </div>
+        <div class="stat-item fade-up delay-1">
+          <span class="stat-number" data-target="500" data-suffix="+">0</span>
+          <span class="stat-label">Направлений</span>
+        </div>
+        <div class="stat-item fade-up delay-2">
+          <span class="stat-number" data-target="15" data-suffix=" лет">0</span>
+          <span class="stat-label">Опыта на рынке</span>
+        </div>
+        <div class="stat-item fade-up delay-3">
+          <span class="stat-number" data-target="98" data-suffix="%">0</span>
+          <span class="stat-label">Положительных отзывов</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       О КОМПАНИИ
+       ====================================================== -->
+  <section class="section about-section">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Фото с бейджем -->
+        <div class="about-image-wrap fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=800"
+            alt="Путешественник с картой"
+            class="about-image-main"
+          >
+          <div class="about-image-badge">
+            <span class="badge-num">15</span>
+            <span class="badge-text">Лет опыта</span>
+          </div>
+        </div>
+        <!-- Текст -->
+        <div class="about-content">
+          <span class="section-tag fade-up">О компании</span>
+          <h2 class="fade-up delay-1">Ваш надёжный партнёр в мире путешествий</h2>
+          <div class="divider fade-up delay-1" style="margin:0 0 18px;"></div>
+          <p class="fade-up delay-2">
+            <strong>ВояжСервис</strong> — современное туристическое агентство, сочетающее
+            многолетний профессиональный опыт с передовыми цифровыми технологиями.
+            Мы разработали инновационную онлайн-систему управления турами.
+          </p>
+          <p class="fade-up delay-3">
+            Наша команда опытных специалистов подберёт идеальный тур для каждого клиента —
+            от пляжного отдыха до экзотических приключений. Прямые договоры с отелями и
+            авиакомпаниями гарантируют лучшие цены.
+          </p>
+          <div class="about-features fade-up delay-4">
+            <div class="about-feature">
+              <div class="about-feature-icon">🛡️</div>
+              <div class="about-feature-text">
+                <h4>Гарантия качества</h4>
+                <p>Проверенные отели и партнёры</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">💳</div>
+              <div class="about-feature-text">
+                <h4>Онлайн оплата</h4>
+                <p>Безопасные платёжные системы</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">🌍</div>
+              <div class="about-feature-text">
+                <h4>500+ направлений</h4>
+                <p>Все уголки мира доступны</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">📞</div>
+              <div class="about-feature-text">
+                <h4>Поддержка 24/7</h4>
+                <p>Всегда на связи с вами</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       ПОПУЛЯРНЫЕ НАПРАВЛЕНИЯ
+       ====================================================== -->
+  <section class="section destinations-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag fade-up">Популярные направления</span>
+        <h2 class="fade-up delay-1">Куда отправиться?</h2>
+        <div class="divider fade-up delay-2"></div>
+        <p class="fade-up delay-3">Откройте для себя самые захватывающие уголки планеты с нашими профессионалами</p>
+      </div>
+
+      <div class="tours-grid">
+        <!-- Карточка 1 -->
+        <div class="tour-card fade-up">
+          <div class="tour-card-image">
+            <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?q=80&w=800" alt="Мальдивы">
+            <span class="tour-badge">🔥 Хит</span>
+          </div>
+          <div class="tour-card-body">
+            <div class="tour-location">📍 Индийский океан</div>
+            <h3>Мальдивские острова</h3>
+            <p>Кристальные воды, белоснежные пляжи и роскошные бунгало над водой — идеальный отдых.</p>
+            <div class="tour-card-footer">
+              <div class="tour-price">
+                <span class="from">от</span>
+                <span class="amount">2 999 <span class="currency">₼</span></span>
+              </div>
+              <div class="tour-duration">⏱ 10 ночей</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Карточка 2 -->
+        <div class="tour-card fade-up delay-1">
+          <div class="tour-card-image">
+            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=800" alt="Париж">
+            <span class="tour-badge">💕 Romantic</span>
+          </div>
+          <div class="tour-card-body">
+            <div class="tour-location">📍 Франция, Европа</div>
+            <h3>Романтичный Париж</h3>
+            <p>Эйфелева башня, изысканная кухня, модные бутики и неповторимая атмосфера города любви.</p>
+            <div class="tour-card-footer">
+              <div class="tour-price">
+                <span class="from">от</span>
+                <span class="amount">1 799 <span class="currency">₼</span></span>
+              </div>
+              <div class="tour-duration">⏱ 7 ночей</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Карточка 3 -->
+        <div class="tour-card fade-up delay-2">
+          <div class="tour-card-image">
+            <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?q=80&w=800" alt="Таиланд">
+            <span class="tour-badge">⭐ Популярный</span>
+          </div>
+          <div class="tour-card-body">
+            <div class="tour-location">📍 Юго-Восточная Азия</div>
+            <h3>Экзотический Таиланд</h3>
+            <p>Буддийские храмы, уличная еда, слоны и потрясающие пляжи Краби и Пхукета.</p>
+            <div class="tour-card-footer">
+              <div class="tour-price">
+                <span class="from">от</span>
+                <span class="amount">2 249 <span class="currency">₼</span></span>
+              </div>
+              <div class="tour-duration">⏱ 12 ночей</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-40">
+        <a href="services.html" class="btn btn-primary fade-up">Все направления →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       ПРЕИМУЩЕСТВА
+       ====================================================== -->
+  <section class="section advantages-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag fade-up">Почему выбирают нас</span>
+        <h2 class="fade-up delay-1">Наши преимущества</h2>
+        <div class="divider fade-up delay-2"></div>
+        <p class="fade-up delay-3">Мы делаем всё, чтобы ваше путешествие было незабываемым</p>
+      </div>
+      <div class="advantages-grid">
+        <div class="advantage-card fade-up">
+          <div class="advantage-icon">🌐</div>
+          <h4>Онлайн-система</h4>
+          <p>Удобная цифровая платформа для бронирования туров круглосуточно, без визита в офис</p>
+        </div>
+        <div class="advantage-card fade-up delay-1">
+          <div class="advantage-icon">💰</div>
+          <h4>Лучшие цены</h4>
+          <p>Прямые договоры с отелями и авиакомпаниями — минимальные наценки для клиентов</p>
+        </div>
+        <div class="advantage-card fade-up delay-2">
+          <div class="advantage-icon">🏆</div>
+          <h4>15 лет опыта</h4>
+          <p>Профессиональная команда с многолетним опытом в туристическом бизнесе</p>
+        </div>
+        <div class="advantage-card fade-up delay-3">
+          <div class="advantage-icon">🔒</div>
+          <h4>Безопасность</h4>
+          <p>SSL-шифрование данных и финансовая защита при онлайн-бронировании</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       ПРИЗЫВ К ДЕЙСТВИЮ
+       ====================================================== -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="fade-up">Готовы к незабываемому путешествию?</h2>
+      <p class="fade-up delay-1">Забронируйте тур онлайн прямо сейчас и получите скидку 10%</p>
+      <div class="fade-up delay-2">
+        <a href="services.html" class="btn btn-primary">🌟 Забронировать тур</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       ФУТЕР
+       ====================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">✈</div>
+            <div class="nav-logo-text">
+              <span class="nav-logo-name">ВояжСервис</span>
+              <span class="nav-logo-sub">Travel Agency</span>
+            </div>
+          </a>
+          <p>Профессиональное туристическое агентство с онлайн-системой бронирования. Делаем путешествия доступными и незабываемыми с 2009 года.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" title="ВКонтакте">VK</a>
+            <a href="#" class="social-link" title="Telegram">TG</a>
+            <a href="#" class="social-link" title="Instagram">IG</a>
+            <a href="#" class="social-link" title="YouTube">YT</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Навигация</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"    class="footer-link">Главная</a></li>
+            <li><a href="services.html" class="footer-link">Услуги и туры</a></li>
+            <li><a href="system.html"   class="footer-link">О системе</a></li>
+            <li><a href="contacts.html" class="footer-link">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Направления</h5>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Европа</a></li>
+            <li><a href="services.html" class="footer-link">Азия и Восток</a></li>
+            <li><a href="services.html" class="footer-link">ОАЭ и Турция</a></li>
+            <li><a href="services.html" class="footer-link">Экзотика</a></li>
+            <li><a href="services.html" class="footer-link">Пляжный отдых</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Контакты</h5>
+          <ul class="footer-links">
+            <li><span class="footer-link">📍 г. Баку, ул. Низами, 46</span></li>
+            <li><a href="tel:+994125551234" class="footer-link">📞 +994 (12) 555-12-34</a></li>
+            <li><a href="mailto:info@voyageservice.az" class="footer-link">✉ info@voyageservice.az</a></li>
+            <li><span class="footer-link">🕐 Пн–Пт: 9:00–20:00</span></li>
+            <li><span class="footer-link">🕐 Сб–Вс: 10:00–18:00</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 ВояжСервис. Все права защищены.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Пользовательское соглашение</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
